@@ -17,6 +17,10 @@ class TweetGenerator(object):
             'tweet_templ': 'Við, fyrir okkar leyti, sjáum ekkert athugavert við nafnið „{}“',
             'time_tags': ['any'],
         },
+        {
+            'tweet_templ': 'Góðir Íslendingar, nafnið {} er nú í boði.',
+            'time_tags': ['any'],
+        },
     ]
 
     def _get_tweet(self, tag):
