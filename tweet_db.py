@@ -27,7 +27,7 @@ tweet_list = [
         'time_tags': ['morning'],
     },
     {
-        'tweet_templ': 'Í aðeins takmarkaðan tíma erum við tilbúin að leyfa einhverjum heppnum að heita „{}.“',
+        'tweet_templ': 'Í takmarkaðan tíma erum við tilbúin að leyfa einhverjum heppnum að heita „{}.“',
         'time_tags': ['afternoon', 'morning']
     },
     {
@@ -46,4 +46,16 @@ tweet_list = [
         'tweet_templ': 'Hvað á barnið að heita? Hvað með „{}.“',
         'time_tags': ['morning', 'afternoon'],
     },
+    {
+        'tweet_templ': 'Nýjasta nafnið frá okkur er algjör sleggja: „{}.“',
+        'time_tags': ['any'],
+    },
+    {
+        'tweet_templ': 'Mannanafnanefnd kynnir til sögunnar nafnið „{}.“',
+        'time_tags': ['any'],
+    },
+    {
+        'tweet_templ': 'Í hús kom {}, og óskaði skýringa á afhverju nafnið var ekki stöðvað',
+        'time_tags': ['any'],
+    }
 ]
