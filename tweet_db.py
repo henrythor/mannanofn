@@ -82,4 +82,8 @@ tweet_list = [
         'tweet_templ': 'Til hamingju með nafnið, {}',
         'time_tags': ['lunch', 'afternoon', 'evening'],
     },
+    {
+        'tweet_templ': 'Vorum að taka upp ný nöfn, þar á meðal „{}“',
+        'time_tags': ['morning', 'lunch', 'afternoon'],
+    },
 ]
