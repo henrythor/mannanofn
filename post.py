@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from .config import config
-from .name_generator import NameGenerator
-from .tweet_generator import TweetGenerator
+from config import config
+from name_generator import NameGenerator
+from tweet_generator import TweetGenerator
 import tweepy
 
 
