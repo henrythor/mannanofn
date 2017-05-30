@@ -4,6 +4,12 @@ from config import config
 from name_generator import NameGenerator
 from tweet_generator import TweetGenerator
 import tweepy
+import argparse
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', '--print', help="Only print the tweet, don't send it.", action='store_true')
+args = parser.parse_args()
 
 
 def get_api(cfg):
@@ -20,8 +26,11 @@ def main():
 
     name = name_gen.get_name()
     tweet_templ = tweet_gen.get_tweet()
-
-    api.update_status(status=tweet_templ.format(name))
+    tweet_status = tweet_templ.format(name)
+    if args.print:
+        print(tweet_status)
+    else:
+        api.update_status(status=tweet_status)
 
 
 if __name__ == "__main__":
