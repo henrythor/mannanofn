@@ -44,7 +44,7 @@ class NameGenerator(object):
                     elif kyn == self.KYN_KK:
                         output += 'son'
                     return output
-        return self.fodurnafn_get(kyn)
+        return self.get_fodurnafn(kyn)
 
     def get_name(self):
         output = ''
