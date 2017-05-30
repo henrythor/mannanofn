@@ -6,7 +6,9 @@ from tweet_db import tweet_list
 
 
 class TweetGenerator(object):
-    tweets = tweet_list
+    def __init__(self):
+        self.tweets = tweet_list.copy()
+        random.shuffle(self.tweets)
 
     def _get_tweet(self, tag):
         lentweets = len(self.tweets)
@@ -32,4 +34,3 @@ class TweetGenerator(object):
 
     def get_tweet(self):
         return self._get_tweet(self._get_tag())
-
