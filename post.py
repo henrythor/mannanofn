@@ -5,6 +5,7 @@ from name_generator import NameGenerator
 from tweet_generator import TweetGenerator
 import tweepy
 import argparse
+import emoji
 
 
 parser = argparse.ArgumentParser()
@@ -26,7 +27,7 @@ def main():
 
     name = name_gen.get_name()
     tweet_templ = tweet_gen.get_tweet()
-    tweet_status = tweet_templ.format(name)
+    tweet_status = emoji.emojize(tweet_templ.format(name))
     if args.print:
         print(tweet_status)
     else:

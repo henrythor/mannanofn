@@ -56,6 +56,26 @@ tweet_list = [
     },
     {
         'tweet_templ': 'Í hús kom {}, og óskaði skýringa á afhverju nafnið var ekki stöðvað',
-        'time_tags': ['any'],
-    }
+        'time_tags': ['lunch'],
+    },
+    {
+        'tweet_templ': 'Nýja uppáhaldsnafnið mitt er „{}.“',
+        'time_tags': ['morning', 'lunch'],
+    },
+    {
+        'tweet_templ': 'Hæ #næturtwitter. Eftirfarandi nafn er staðfest: „{}.“',
+        'time_tags': ['night'],
+    },
+    {
+        'tweet_templ': '„{}“ er :thumbs_up:',
+        'time_tags': ['evening', 'night'],
+    },
+    {
+        'tweet_templ': '{} :fire: :fire: :fire: :fire:',
+        'time_tags': ['evening', 'night'],
+    },
+    {
+        'tweet_templ': 'Ég var sá sem leyfði nafnið „{}“ :sunglasses:',
+        'time_tags': ['lunch'],
+    },
 ]
