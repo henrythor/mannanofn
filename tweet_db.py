@@ -86,4 +86,12 @@ tweet_list = [
         'tweet_templ': 'Vorum að taka upp ný nöfn, þar á meðal „{}“',
         'time_tags': ['morning', 'lunch', 'afternoon'],
     },
+    {
+        'tweet_templ': 'Það var á kvöldi sem þessu sem ég fyrst heyrði nafnið {}',
+        'time_tags': ['evening', 'night'],
+    },
+    {
+        'tweet_templ': 'Nýtt nafn líklegt til vinsælda: „{}“',
+        'time_tags': ['evening', 'night'],
+    },
 ]
