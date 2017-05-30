@@ -7,8 +7,16 @@ class TweetGenerator(object):
     tweets = [
         {
             'tweet_templ': 'Vér höfum ákveðið að hleypa nafninu „{}“ í notkun. Góðar stundir.',
-            'time_tags': ['any']
-        }
+            'time_tags': ['any'],
+        },
+        {
+            'tweet_templ': 'Góðan dag öllsömul. Við viljum minna á nafnið „{}.“',
+            'time_tags': ['morning'],
+        },
+        {
+            'tweet_templ': 'Við, fyrir okkar leyti, sjáum ekkert athugavert við nafnið „{}“',
+            'time_tags': ['any'],
+        },
     ]
 
     def _get_tweet(self, tag):
