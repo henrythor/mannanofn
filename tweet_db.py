@@ -78,4 +78,8 @@ tweet_list = [
         'tweet_templ': 'Ég var sá sem leyfði nafnið „{}“ :sunglasses:',
         'time_tags': ['lunch'],
     },
+    {
+        'tweet_templ': 'Til hamingju með nafnið, {}',
+        'time_tags': ['lunch', 'afternoon', 'evening'],
+    },
 ]
