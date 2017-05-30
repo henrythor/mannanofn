@@ -13,7 +13,7 @@ class TweetGenerator(object):
 
     def _get_tweet(self, tag):
         lentweets = len(self.tweets)
-        proposed_tweet = self.tweets[random.randint(0, lentweets)]
+        proposed_tweet = self.tweets[random.randint(0, lentweets - 1)]
         if tag in proposed_tweet['time_tags'] or 'all' in proposed_tweet['time_tags']:
             return proposed_tweet['tweet_templ']
         return self._get_tweet(tag)
