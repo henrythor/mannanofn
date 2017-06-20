@@ -27,7 +27,7 @@ class NameGenerator(object):
         fodurnafn_fj = len(self.nofn[0])
         fodurnafn_i = random.randint(0, fodurnafn_fj - 1)
         nafn = self.nofn[0][fodurnafn_i]
-        url_search = '//div[@id="mw-content-text"]/ul/li/a[@title="{}"]/@href'.format(nafn)
+        url_search = '//div[@id="mw-content-text"]/div/ul/li/a[@title="{}"]/@href'.format(nafn)
         fodurnafn = self.kk_tree.xpath(url_search)
         if len(fodurnafn) > 0:
             fodurnafn_url += fodurnafn[0]
