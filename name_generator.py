@@ -12,7 +12,7 @@ class NameGenerator(object):
         self.kk_tree = html.fromstring(self.kk_page.content)
         self.kvk_tree = html.fromstring(self.kvk_page.content)
 
-        self.kk_nofn = self.kk_tree.xpath('//div[@id="mw-content-text"]/ul/li/a/text()')[0:-2]
+        self.kk_nofn = self.kk_tree.xpath('//div[@id="mw-content-text"]/div/ul/li/a/text()')[0:-2]
         self.kvk_nofn = self.kvk_tree.xpath('//div[@id="mw-content-text"]/div/ul/li/a/text()')[0:-2]
 
         self.nofn = []
