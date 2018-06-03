@@ -33,7 +33,7 @@ class NameGenerator(object):
             fodurnafn_url += fodurnafn[0]
             fodurnafn_page = requests.get(fodurnafn_url)
             fodurnafn_tree = html.fromstring(fodurnafn_page.content)
-            trs = fodurnafn_tree.xpath('//table/tr')
+            trs = fodurnafn_tree.xpath('//table/tbody/tr')
             for tr in trs:
                 tds = tr.getchildren()
                 if tds[0].text_content() == 'Eignarfall':
